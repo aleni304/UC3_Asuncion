@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="409dp"
+        android:layout_height="177dp"
+        android:background="#3c5996"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-1dp">
+
+        <TextView
+            android:id="@+id/textViewTitulo"
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/textViewTitulo"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.086" />
+
+        <TextView
+            android:id="@+id/textViewCorreo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/textViewCorreo1"
+            android:textColor="#fff"
+            app:layout_constraintStart_toStartOf="@+id/textViewTitulo"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitulo" />
+
+        <TextView
+            android:id="@+id/textViewContra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="100dp"
+            android:text="@string/textViewContra1"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewCorreo1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewCorreo1"
+            app:layout_constraintTop_toTopOf="@+id/textViewCorreo1" />
+
+        <EditText
+            android:id="@+id/editTextCorreo"
+            android:layout_width="165dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:drawableEnd="@drawable/baseline_email_24"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/textViewCorreo1"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCorreo1" />
+
+        <EditText
+            android:id="@+id/editTextContra"
+            android:layout_width="165dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:drawableEnd="@drawable/baseline_password_24"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/textViewContra"
+            app:layout_constraintTop_toBottomOf="@+id/textViewContra" />
+
+        <Button
+            android:id="@+id/buttonEntrar"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#5B76A9"
+            android:text="@string/buttonEntrar"
+            app:layout_constraintEnd_toEndOf="@+id/editTextContra"
+            app:layout_constraintTop_toBottomOf="@+id/editTextContra" />
+
+        <CheckBox
+            android:id="@+id/checkBoxCerrarSesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#f0f2f5"
+            android:text="@string/checkboxCerrarSesion"
+            android:textColor="#f0f2f5"
+            app:layout_constraintStart_toStartOf="@+id/editTextCorreo"
+            app:layout_constraintTop_toBottomOf="@+id/editTextCorreo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="0dp"
+        android:background="#F0F2F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+        <TextView
+            android:id="@+id/textViewRegistrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/textViewRegistrate"
+            android:textColor="#2a3f67"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/textViewInfo"
+            android:textColor="#3c5996"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/textViewRegistrate"
+            app:layout_constraintTop_toBottomOf="@+id/textViewRegistrate" />
+
+        <TextView
+            android:id="@+id/textViewNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/textViewNombre"
+            android:textColor="#3c5996"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewInfo" />
+
+        <EditText
+            android:id="@+id/editTextNombre"
+            android:layout_width="255dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/plainTextNombre"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewNombre"
+            app:layout_constraintStart_toEndOf="@+id/textViewNombre"
+            app:layout_constraintTop_toTopOf="@+id/textViewNombre" />
+
+        <TextView
+            android:id="@+id/textViewApellidos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/textViewApellidos"
+            android:textColor="#3c5996"
+            app:layout_constraintStart_toStartOf="@+id/textViewNombre"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNombre" />
+
+        <EditText
+            android:id="@+id/editTextApellidos"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/plainTextApellidos"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewApellidos"
+            app:layout_constraintEnd_toEndOf="@+id/editTextNombre"
+            app:layout_constraintStart_toEndOf="@+id/textViewApellidos"
+            app:layout_constraintTop_toTopOf="@+id/textViewApellidos" />
+
+        <TextView
+            android:id="@+id/textViewCorreo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/textViewCorreo"
+            android:textColor="#3c5996"
+            app:layout_constraintStart_toStartOf="@+id/textViewApellidos"
+            app:layout_constraintTop_toBottomOf="@+id/textViewApellidos" />
+
+        <TextView
+            android:id="@+id/textViewContraseña"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/textViewContraseña"
+            android:textColor="#3c5996"
+            app:layout_constraintStart_toStartOf="@+id/textViewCorreo"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCorreo" />
+
+        <TextView
+            android:id="@+id/textViewSexo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/textViewSexo"
+            android:textColor="#3c5996"
+            app:layout_constraintStart_toStartOf="@+id/textViewContraseña"
+            app:layout_constraintTop_toBottomOf="@+id/textViewContraseña" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="258dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewSexo"
+            app:layout_constraintStart_toEndOf="@+id/textViewSexo"
+            app:layout_constraintTop_toTopOf="@+id/textViewSexo">
+
+            <RadioButton
+                android:id="@+id/radioButtonMujer"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/baseline_woman_24"
+                android:text="@string/radioButtonMujer" />
+
+            <RadioButton
+                android:id="@+id/radioButtonHombre"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/baseline_man_24"
+                android:text="@string/radioButtonHombre" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/textViewFecha"
+            android:textColor="#3c5996"
+            app:layout_constraintStart_toStartOf="@+id/textViewSexo"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSexo" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:drawableLeft="@drawable/baseline_date_range_24"
+            android:ems="10"
+            android:inputType="date"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewFecha"
+            app:layout_constraintStart_toEndOf="@+id/textViewFecha"
+            app:layout_constraintTop_toTopOf="@+id/textViewFecha" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="189dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewCorreo"
+            app:layout_constraintStart_toEndOf="@+id/textViewCorreo"
+            app:layout_constraintTop_toTopOf="@+id/textViewCorreo" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:drawableLeft="@drawable/baseline_password_24"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewContraseña"
+            app:layout_constraintStart_toEndOf="@+id/textViewContraseña"
+            app:layout_constraintTop_toTopOf="@+id/textViewContraseña" />
+
+        <Button
+            android:id="@+id/buttonRegistrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#00a400"
+            android:drawableLeft="@drawable/baseline_send_24"
+            android:text="@string/buttonRegistrar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFecha" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="42dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
